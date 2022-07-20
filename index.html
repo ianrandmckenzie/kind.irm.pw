@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta name="description" content="You have received an encrypted message.">
+    <meta name="abstract" content="You have received an encrypted message.">
+    <meta property="og:image" content="./og-image.jpg">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Open Source CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Project CSS -->
+    <link rel="stylesheet" href="./main.css">
+
+    <title>Encrypted Message</title>
+  </head>
+  <body>
+    <div class="container" id="atf" data-aos="flip-up">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1><i class="fa-solid fa-triangle-exclamation"></i> Attention! <i class="fa-solid fa-triangle-exclamation"></i></h1>
+          <p>You have received an encoded message of critical importance.</p>
+          <p id="enc-msg">
+            <span class="decrypted-1">
+              You matter.
+            </span>
+            <span class="encrypted-1">
+              5a9057c178a1e39164fee674874ec94501f6611324770ffa8f5b222ccd0f85c2
+            </span>
+          </p>
+          <button class="btn btn-md btn-ym" onClick="$(this).hide();startdecrypt($('.decrypted-1'),$('.encrypted-1'));">decrypt</button>
+        </div>
+      </div>
+    </div>
+    <!-- Open Source JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d3f4faa97e.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- Project JS -->
+    <script src="./main.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000
+      });
+    </script>
+  </body>
+</html>
